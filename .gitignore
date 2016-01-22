@@ -4,3 +4,5 @@ bin
 .jsweet
 .ts
 .generated
+www/js/org
+platforms
