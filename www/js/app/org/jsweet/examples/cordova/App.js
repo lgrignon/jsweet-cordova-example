@@ -1,4 +1,4 @@
-"Generated from Java with JSweet 1.0.0-RC1 - http://www.jsweet.org";
+"Generated from Java with JSweet 1.0.0 - http://www.jsweet.org";
 var org;
 (function (org) {
     var jsweet;
@@ -119,13 +119,10 @@ var org;
                         this.bindEvents();
                     };
                     App.prototype.bindEvents = function () {
-                        var _this = this;
-                        var handler = function (e) { return _this.onDeviceReady(e); };
-                        document.addEventListener("deviceready", handler, false);
-                    };
-                    App.prototype.onDeviceReady = function (e) {
-                        console.log("device ready!");
-                        return null;
+                        document.addEventListener("deviceready", function (e) {
+                            console.log("device ready!");
+                            return null;
+                        }, false);
                     };
                     App.main = function (args) {
                         App.instance.initialize();

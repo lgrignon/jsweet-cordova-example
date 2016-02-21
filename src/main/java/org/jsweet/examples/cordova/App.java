@@ -153,13 +153,10 @@ public class App {
 	}
 
 	public void bindEvents() {
-		Function<Event, Object> handler = this::onDeviceReady;
-		document.addEventListener(deviceready, handler, false);
-	}
-
-	public Object onDeviceReady(Event e) {
-		console.log("device ready!");
-		return null;
+		document.addEventListener(deviceready, (Event e) -> {
+			console.log("device ready!");
+			return null;
+		} , false);
 	}
 
 	// public void takePicture() {

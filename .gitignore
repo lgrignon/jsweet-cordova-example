@@ -7,5 +7,7 @@ plugins/
 target
 .generated
 .jsweet
+.ts
 www/js/app
 plugins/cordova-plugin-whitelist/
+/bin/
